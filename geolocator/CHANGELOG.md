@@ -1,4 +1,3 @@
-
 ## 8.1.0
 
 - Added functionality to receive NMEA messages.
