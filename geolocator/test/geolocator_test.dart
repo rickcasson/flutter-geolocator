@@ -68,9 +68,11 @@ void main() {
       debugDefaultTargetPlatformOverride = null;
     });
 
-    test('getCurrentPosition Accuracy', () async {
+    test('getCurrentPosition parameters', () async {
       final position = await Geolocator.getCurrentPosition(
-          desiredAccuracy: LocationAccuracy.best);
+          desiredAccuracy: LocationAccuracy.best,
+          forceAndroidLocationManager: true,
+          timeLimit: const Duration(seconds: 5));
       expect(position.accuracy, mockPosition.accuracy);
     });
 
