@@ -20,7 +20,7 @@ jobs:
     name: Format
 
     # The type of runner that the job will run on
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     env:
       source-directory: ./geolocator 

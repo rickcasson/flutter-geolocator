@@ -97,7 +97,7 @@ void main() {
 
       // Act & Assert
       expect(
-        geolocatorPlatform.getCurrentPosition,
+        geolocatorPlatform.getCurrentPosition(locationSettings: null),
         throwsUnimplementedError,
       );
     });
